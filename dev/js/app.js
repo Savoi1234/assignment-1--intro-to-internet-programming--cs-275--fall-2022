@@ -1,7 +1,7 @@
 window.onload = () => {
     alert(`JavaScript Works`);
-let col = 10; 
-let row = 10; 
+let col = input; 
+let row = input; 
 
 }
 window.onload = () =>{ 
@@ -13,8 +13,15 @@ window.onload = () =>{
     input = parseInt(typeof input); 
     if (input < 2) {
         alert ("invalid input"); 
-        
+     if (isNaN(input)== true) {
+        alert ("Re-enter Input")
+
+     }
     }
+
+let gridOne = new Array(input); 
+ 
+
 
 
 }
