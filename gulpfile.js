@@ -9,13 +9,13 @@ const { src, dest, series, watch } = require(`gulp`),
 
 
 let compressHTML = () => {
-    return src(`index.html`)
+    return src(`dev/index.html`)
         .pipe(htmlCompressor({collapseWhitespace: true}))
         .pipe(dest(`prod`));
 };
 
 let compressCSS = () => {
-    return src(`css/style.css`)
+    return src(`dev/style.css`)
         .pipe(cssCompressor({collapseWhitespace: true}))
         .pipe(dest(`prod`));
 };
@@ -34,13 +34,13 @@ let validateJS = () => {
 };
 
 let transpileJSForDev = () => {
-    return src(`js/app.js`)
+    return src(`dev/app.js`)
         .pipe(babel())
         .pipe(dest(`temp/scripts`));
 };
 
 let transpileJSForProd = () => {
-    return src(`js/app.js`)
+    return src(`dev/app.js`)
         .pipe(babel())
         .pipe(jsCompressor())
         .pipe(dest(`prod/scripts`));
@@ -52,8 +52,8 @@ let serve = () => {
         reloadDelay: 50,
         server: {
             baseDir: [
-                ``,
-                `./`,
+                `dev`,
+                `html`,
                 `css`,
                 `js`,
             ]
