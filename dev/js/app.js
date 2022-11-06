@@ -10,6 +10,11 @@ window.onload = () =>{
 
 
     let input = window.prompt('Input Number'); 
+    input = parseInt(typeof input); 
+    if (input < 2) {
+        alert ("invalid input"); 
+        
+    }
 
 
 }
