@@ -17,7 +17,6 @@
     "url": "https://github.com/code-warrior/assignment-1--intro-to-internet-programming--cs-275--fall-2022/issues"
   },
   "homepage": "https://github.com/code-warrior/assignment-1--intro-to-internet-programming--cs-275--fall-2022#readme",
-  
   "dependencies": {
     "@babel/core": "^7.19.6",
     "@babel/preset-env": "^7.19.4",
