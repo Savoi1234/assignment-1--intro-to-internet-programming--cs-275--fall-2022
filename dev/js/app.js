@@ -33,5 +33,21 @@ for (let  i = 0; i < originalgrid.length; i++) {
     content += `</table>`; 
 
    
+    initial.innerHTML = content; 
 
-    
+    let middle = parseInt(originalgrid.length/ 2); 
+
+    content = `<table>`; 
+
+    for (let j = 0; j < originalgrid.length; j++) { 
+
+        let pickz = grid[i][j]; 
+        let cnum = i * originalgrid.length + j; 
+      
+        if (((originalgrid.length + ((originalgrid.length - 1) * i))== (cnum + 1))) {
+            if ((cnum < middle)) {
+            
+            }
+        }
+
+    }
