@@ -8,3 +8,17 @@ h1 {
     border-radius: 50px;
     background-color: green;
 }
+
+table {
+    border-collapse: collapse; 
+     border-width: 200px; 
+     border-color: white;
+}  
+
+
+
+.tbl2 {
+    background: black;
+    border-collapse: collapse;
+        
+} 
