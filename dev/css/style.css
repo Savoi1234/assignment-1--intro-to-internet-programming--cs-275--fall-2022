@@ -1,24 +1,28 @@
-body {
-     
-    text-align: center;
-}
+.matrix td {
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+  }
 
-h1 {
-    border-width: 10px;
-    border-radius: 50px;
-    background-color: green;
-}
+  .matrix td.unflipped {
+  background-color: yellow;
+  }
 
+  body {
+  text-align: center;
+  }
+
+  .matrix {
+  width: 10%;
+  margin: 0 auto;
+  padding: 10px;
+  }
 table {
-    border-collapse: collapse; 
-     border-width: 200px; 
-     border-color: white;
-}  
+  border-collapse: collapse;
+}
 
-
-
-.tbl2 {
-    background: black;
-    border-collapse: collapse;
-        
-} 
+td {
+  border: 1px solid black;
+  padding: 0.5em;
+  text-align: center;
+}

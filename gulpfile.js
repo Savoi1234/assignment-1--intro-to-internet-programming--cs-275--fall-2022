@@ -29,8 +29,8 @@ let compressJS = () => {
 
 let validateJS = () => {
     return src(`dev/js/app.js`)
-    .pipe(jsValidator())
-    .pipe(jsValidator.formatEach(`compact`, process.stderr));
+        .pipe(jsValidator())
+        .pipe(jsValidator.formatEach(`compact`, process.stderr));
 };
 
 let transpileJSForDev = () => {
@@ -52,7 +52,7 @@ let serve = () => {
         reloadDelay: 50,
         server: {
             baseDir: [
-               'temp', 
+                `temp`,
                 `dev`,
                 `dev/html`,
                 `dev/css`,
